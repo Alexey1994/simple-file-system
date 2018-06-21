@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script src="file-system.js"></script>
+
+    <script>
+        var data = createData(1024)
+        createFileSystem(data)
+
+        createFile('File1', 2, data)
+        createFile('File2', 3, data)
+
+        printFiles(data)
+
+        console.log(openFile('File2', data))
+    </script>
+</body>
+</html>
